@@ -27,12 +27,12 @@ body {
   background-size: contain;
 }
 .card {
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: white;
-  max-width: 375px;
+  max-width: 450px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 30px 80px -60px var(--bright-blue);
+  box-shadow: 0 15px 17px 0 rgba(56, 42, 225, 0.19);
   overflow: hidden;
 }
 .card .image img {
@@ -47,7 +47,7 @@ body {
 .card .text p.special {
   text-transform: capitalize;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 28px;
   color: var(--dark-blue);
   letter-spacing: 0.3px;
   margin-bottom: 20px;
@@ -56,9 +56,9 @@ body {
   font-size: 14px;
   max-width: 270px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--desaturated-blue);
-  font-weight: 700;
+  font-weight: 500;
 }
 .card .plan {
   display: flex;
@@ -79,7 +79,7 @@ body {
 .card .wrapper > .plan {
   border-radius: 10px;
   background-color: var(--very-pale-blue);
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin-bottom: 20px;
 }
 .card .plan .plan.text .annual p {
@@ -98,38 +98,12 @@ body {
   text-transform: capitalize;
   font-size: 14px;
   cursor: pointer;
-  transition: 0.3s;
-  position: relative;
-  z-index: 1;
+  text-decoration: underline;
 }
-.card .plan .plan.text > p::before {
-  content: "";
-  height: 1.5px;
-  bottom: 1.5px;
-  position: absolute;
-  left: 0;
-  width: 34px;
-  z-index: -1;
-  background-color: var(--bright-blue);
-  transition: 0.4s;
-}
-.card .plan .plan.text > p::after {
-  content: "";
-  height: 1.5px;
-  bottom: 1.5px;
-  position: absolute;
-  right: 0;
-  width: 8px;
-  z-index: -1;
-  background-color: var(--bright-blue);
-  transition: 0.4s;
-}
+
 .card .plan .plan.text > p:hover {
   color: #766cf1;
-}
-.card .plan .plan.text > p:hover::after,
-.card .plan .plan.text > p:hover::before {
-  width: 0;
+  text-decoration: none;
 }
 
 .card .payment p {
@@ -143,7 +117,7 @@ body {
   color: var(--very-pale-blue);
   border-radius: 10px;
   padding: 13px 10px;
-  box-shadow: 0 10px 40px -15px var(--bright-blue);
+  box-shadow: 0 15px 17px 0 rgba(56, 42, 225, 0.19);
   margin-bottom: 25px;
   margin-top: 40px;
   font-weight: 700;
